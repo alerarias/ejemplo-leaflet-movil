@@ -83,12 +83,12 @@
       canton.addTo(mapa);
 	    
       var baseLayers = {
-	      "OpenStreetMap": osm
+	      "OpenStreetMap": osm,
+	      "Provincias": wmsLayer
       };
       
       var overlays = {
-	      "Cantones": canton,
-	      "Provincias": wmsLayer
+	      "Cantones": canton
       };
       
       L.control.layers(baseLayers, overlays, {collapsed : false}).addTo(mapa);
